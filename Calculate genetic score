@@ -1,0 +1,4 @@
+Code to calculate ePRS-IR-PFC-STR:
+Rscript $PWD/PRSice.R --prsice $PWD/PRSice_linux --base $PWD/Sumstats_IR-PFC-STR.txt --snp rsid --pvalue p-value --stat beta --A1 effect_allele --A2 non_effect_allele --target $PWD/GENODATA --no-regress --clump-kb 500  —clump-r2 0.2  --clump-p 1  --print-snp  --bar-levels 1.0 --fastscore --model add --score sum --missing SET_ZERO --thread max --out $PWD/OUTPUT
+Please refer to https://choishingwan.github.io/PRSice/ for more details on how to install and use PRSice.
+Genodata is to be provided in PLINK binary format (bed/bim/fam).
